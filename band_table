@@ -1,0 +1,65 @@
+<html>
+<head>
+<link rel = "STYLESHEET" href="../css/table.css" type="text/css"/> 
+
+</head>
+<body>
+<h1>The Best Bands </h1>
+
+<!--<input type="search" id="search" placeholder="Filter by Title"> -->
+<table>
+  <tr>
+    <th style="width:50%">Band Name</th>
+    <th>Members</th>
+    <th>Years Active</th>
+    <th>Best Selling Album</th>
+    <th>Bio Summary</th>
+  </tr>
+  
+  <tr>
+    <td id="title"> The Beatles</td>
+    <td>John Lennon, Paul McCartney, George Harrison, Ringo Starr</td>
+    <td>1960-1970</td>
+    <td>Sgt Pepper’s Lonely Hearts Club Band </td>
+    <td></td> #link to summary
+  </tr>
+  
+  <tr>
+    <td id="title">The Jackson Five</td>
+    <td>Jackie Jackson, Tito Jackson, Jermaine Jackson, Marlon Jackson, Michael Jackson, Randy Jackson</td>
+    <td>1964-1989, 2012-2013</td>
+    <td>Victory</td>
+    <td></td> #link to summary
+  </tr>
+  
+  <tr>
+    <td id="title">The Roots</td>
+    <td>Black Thought(Tariq Trotter), Questlove(Ahmir Thompson), Hub (Leonard Hubbard), Mark Kelly, Tuba Gooding Jr. (Damon Bryson), Captain Kirk Douglas, Kamal Gray, F. Knuckles, and James Poyser</td>
+    <td>1987- Present</td>
+    <td>Things Fall Apart</td>
+    <td></td> #link to summary
+  </tr>
+  
+
+
+    <script>
+    // Quick Table Search
+$('#search').keyup(function() {
+  var regex = new RegExp($('#search').val(), "i");
+  var rows = $('table tr:gt(0)');
+  rows.each(function (index) {
+    title = $(this).children("#title").html()
+    if (title.search(regex) != -1) {
+      $(this).show();
+    } else {
+      $(this).hide();
+    }
+  });
+});
+  //# sourceURL=jscript.js
+  </script>
+
+
+</table>
+</html>
+
