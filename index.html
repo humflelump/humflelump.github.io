@@ -3,23 +3,61 @@
     <head>
         <link rel="STYLESHEET" href="css/navigation.css" type="text/css"/>
         <link rel="STYLESHEET" href="css/banner.css" type="text/css"/>
+        <style>
+        .box {
+            width: 25%;
+            border: 1px solid black;
+            padding: 5px;
+        }
+        .box:hover {
+            width: 25%;
+            border: 1px dashed black;
+            padding: 5px;
+            cursor: pointer;
+        }    
+        .logo {
+            width: 100%;
+            max-width: 200px; 
+        }
+        </style>
     </head>
-<body>
-    
-    <div class="topnav" id="myTopnav">
-      <a href="about.html">Htome</a>
-      <a href="about.html">News</a>
-      <a href="about.html">Contact</a>
-      <a href="about.html">About</a>
-    </div>
-    
-    <div id="bannerimage"></div>
+    <body>
 
-    <h1>My First Heading</h1>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="label.html">Labels</a>
+            <a href="band.html">Bands</a>
+            <a href="genre.html">Genres</a>
+        </div>
 
-    <p>My first paragraph.</p>
-    <a href="about.html">about</a>
-    
-    
-</body>
+        <div id="bannerimage"></div>
+        
+        <div style="margin: 50px;">
+            <center><b><font  size="7" face="Snell Roundhand, cursive" color="gray">thebestbands.me</font></b></center>
+            <center><font  size="6" face="Snell Roundhand, cursive" color="gray">Discover Yourself</font></center>
+        </div>
+
+
+        <div id="home-page-boxes" style="display: flex; flex-direction: row; justify-content: space-around">
+            <div class="box" onclick="location.href='about.html';"> 
+                <center><img class="logo" src="images/beatles-logo.jpeg"/></center>
+                <center><h1>The Beatles</h1></center>
+                <p>The beatles are sooooo coool</p>
+            </div>
+            <div class="box" onclick="location.href='about.html';">
+                <center><img class="logo" src="images/jackson5-logo.jpg"/></center>
+                <center><h1>Jackson 5</h1></center>
+                <p>jackson high five</p>
+            </div>
+            <div class="box" onclick="location.href='about.html';"> 
+                <center><img class="logo" src="images/theroots-logo.jpg"/></center>
+                <center><h1>The Roots</h1></center>
+                <p>their roots run deep</p>
+            </div>
+        
+        </div>
+
+
+    </body>
 </html>
