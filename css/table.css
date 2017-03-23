@@ -15,16 +15,18 @@ table {
   border-collapse: collapse;
   width:100%
 } th {
-  background:#666;
-  color:#fff;
+  font-size: 19;
+  background:#F8F8FF;
+  color:#000;
 
-} td {
+} 
+tr:nth-child(odd) {
+    background-color: #F8F8FF;
+}
+td {
   padding:5px;
-  border: 1px solid black;
 }
-table, th, td {
-  border: 1px solid black;
-}
+
 
 .text-wrapper {
   text-align: center;

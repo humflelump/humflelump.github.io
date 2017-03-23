@@ -16,7 +16,7 @@ table {
   border-collapse: collapse;
   width:100%
 } th {
-
+  font-size: 19;
   background:#F8F8FF;
   color:#000;
 }
@@ -26,8 +26,7 @@ tr:nth-child(odd) {
 td {
   padding:5px;
 }
-table, th, td {
-}
+
 
 .text-wrapper {
   text-align: center;
