@@ -7,7 +7,7 @@ body {
 h1
 {  
   text-align: center;
-  color:#000;
+  color:white;
   font-size: 150
  }
 
@@ -44,6 +44,6 @@ td {
   width: 100%;
   background-size: 101%;
   background-position: center;
-  background-image: url("../images/bands.png");
+  background-image: url("../images/bands1.jpg");
   position: relative;
 }
