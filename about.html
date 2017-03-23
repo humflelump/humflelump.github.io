@@ -1,10 +1,114 @@
 <!DOCTYPE html>
 <html>
-<body>
+    <head>
+        <link rel="STYLESHEET" href="css/navigation.css" type="text/css"/>
+        <style>
+            .thumbnail {
+              margin: auto;
+              position: relative;
+              width: 200px;
+              height: 200px;
+              overflow: hidden;
+              border-radius: 50%;
+            }
+            .thumbnail img {
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              height: 100%;
+              width: auto;
+              -webkit-transform: translate(-50%,-50%);
+                  -ms-transform: translate(-50%,-50%);
+                      transform: translate(-50%,-50%);
+            }
+            .thumbnail img.portrait {
+              width: 100%;
+              height: auto;
+            }
+            .flexbox {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                margin: 20px;
+            }
+            .box {
+                border: 1px solid black;
+                border-radius: 20px;
+                width: 220px;
+                padding: 20px;
+                margin: 10px;
+            }
+            .stat-box{
+                border: 1px solid black;
+                border-radius: 20px;
+                width: 220px;
+                padding: 20px;
+                margin: auto;
+                
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="https://github.com/humflelump/cs329e-idb/issues">Github Issues</a>
+        </div>
 
-<h1>The is the about section</h1>
+        <center><h1>Procrastination Nation</h1></center>
+        <h2 style="margin-right: 30px; margin-left: 30px;">Meet our talented team of professional procrastinators. No matter how large the project, they will begin it the day before!</h2>
+        
+        <div class="flexbox">
+            <div class="box">
+                <div class="thumbnail">
+                    <img class="portrait" src="images/face1.jpg"/>
+                </div>
+                <center><h3>Mark Metzger</h3></center>
+                <center><p>Mark, being born in a small, rural town, was raised by his family to procrastinate all the time. This made him ideal in his role as lead procrastinator for Procrastination Nation. His primary responsibilities were to design the about page and the splash screen.</p></center>
+            </div>
 
-<a href="index.html">home</a>
+            <div class="box">
+                <div class="thumbnail">
+                    <img class="portrait" src="images/face2.jpg"/>
+                </div>
+                <center><h3>Mark Metzger</h3></center>
+                <center><p>Mark, being born in a small, rural town, was raised by his family to procrastinate all the time. This made him ideal in his role as lead procrastinator for Procrastination Nation. His primary responsibilities were to design the about page and the splash screen.</p></center>
+            </div>            
+            
+            <div class="box">
+                <div class="thumbnail">
+                    <img class="portrait" src="images/face3.jpg"/>
+                </div>
+                <center><h3>Mark Metzger</h3></center>
+                <center><p>Mark, being born in a small, rural town, was raised by his family to procrastinate all the time. This made him ideal in his role as lead procrastinator for Procrastination Nation. His primary responsibilities were to design the about page and the splash screen.</p></center>
+            </div>
+            
+            <div class="box">
+                <div class="thumbnail">
+                    <img src="images/face4.jpg"/>
+                </div>
+                <center><h3>Mark Metzger</h3></center>
+                <center><p>Mark, being born in a small, rural town, was raised by his family to procrastinate all the time. This made him ideal in his role as lead procrastinator for Procrastination Nation. His primary responsibilities were to design the about page and the splash screen.</p></center>
+            </div>
+        </div>
+        
+        <center><h1>Team Facts!</h1></center>
+        <center><h2>Out team has accomplished a lot in very little time.</h2></center>
+        
+        <div class="flexbox">
+        
+            <div class="stat-box">
+                <center><h3>Total Commits:</h3></center>
+                <center><h1 style="font-size: 300%;">1337</h1></center>
+            </div>
 
-</body>
+            <div class="stat-box">
+                <center><h3>Total Issues:</h3></center>
+                <center><h1 style="font-size: 300%;">15</h1></center>
+            </div>
+            
+        </div>
+
+    </body>
 </html>
