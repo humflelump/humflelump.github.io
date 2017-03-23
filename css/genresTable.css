@@ -43,7 +43,7 @@ table, th, td {
 .billboard {
   height: 380px;
   width: 100%;
-  background-size: 100%;
+  background-size: 101%;
   background-position: center;
   background-image: url("../images/musicGenresBanner.jpg");
   position: relative;
