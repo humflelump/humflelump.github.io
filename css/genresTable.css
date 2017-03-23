@@ -12,18 +12,21 @@ h1
  }
 
 table {
+    margin-top: 0px;
   border-collapse: collapse;
   width:100%
 } th {
-  background:#666;
-  color:#fff;
 
-} td {
+  background:#F8F8FF;
+  color:#000;
+}
+tr:nth-child(odd) {
+    background-color: #F8F8FF;
+}
+td {
   padding:5px;
-  border: 1px solid black;
 }
 table, th, td {
-  border: 1px solid black;
 }
 
 .text-wrapper {
