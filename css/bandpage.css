@@ -7,7 +7,7 @@ body {
 h1
 {  
   text-align: center;
-  color:white;
+  color: white;
   font-size: 150
  }
 
@@ -42,7 +42,7 @@ td {
 .billboard {
   height: 380px;
   width: 100%;
-  background-size: 100%;
+  background-size: 101;
   background-position: center;
   background-image: url("../images/vinyl.jpg");
   position: relative;
