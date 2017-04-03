@@ -8,7 +8,9 @@
         <script>
         
 $(document).ready(function() {
-  $('#example').DataTable();
+    $('#example').dataTable( {
+      "lengthMenu": [ 3, 5, 10 ]
+    } );
 });
 
 	</script>
