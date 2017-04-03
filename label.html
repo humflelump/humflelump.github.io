@@ -1,5 +1,9 @@
 <html>
 <head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
 <link rel = "STYLESHEET" href="./css/labelTable.css" type="text/css"/> 
 <link rel = "STYLESHEET" href="./css/navigation.css" type="text/css"/> 
 
@@ -13,6 +17,7 @@
             <a href="label.html">Labels</a>
             <a href="band.html">Bands</a>
             <a href="genre.html">Genres</a>
+            
         </div>
 
 <div class = "billboard">
@@ -21,16 +26,28 @@
   </div>
 </div>
 
+
+
+
+
+
+<p>Click the button to sort the table alphabetically, by name:</p>
+<p><button onclick="sortTable()">Sort</button></p>
+
+
+
+
 <!--<input type="search" id="search" placeholder="Filter by Title"> -->
-<table>
+<table id = "labelTable">
   <tr>
-    <th style="width:7%">Name</th>
+    <th style="width:7%"> <a link = "sortTable()">Name <p><button onclick = "sortTable()">&#x21E9;</button></p> </a></th>
+
     <th style="width:7%">Year Founded</th>
     <th style="width:15%"> Founder(s)</th>
     <th>History</th>
     <th>Website</th>
   </tr>
-  
+
   <tr>
     <td id="title"><a href="label-emi.html">EMI</a></td>
     <td>1931</td>
@@ -58,7 +75,64 @@
   
 
 
-    <script>
+<script>
+
+
+
+
+
+function sortTable() {
+  var table, rows, switching, i, x, y, shouldSwitch;
+  table = document.getElementById("labelTable");
+  switching = true;
+
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.getElementsByTagName("TR");
+    
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[0];
+      y = rows[i + 1].getElementsByTagName("TD")[0];
+
+      //check if the two rows should switch place:
+      if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+
+        //if so, mark as a switch and break the loop:
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
     // Quick Table Search
 $('#search').keyup(function() {
   var regex = new RegExp($('#search').val(), "i");
@@ -73,7 +147,7 @@ $('#search').keyup(function() {
   });
 });
   //# sourceURL=jscript.js
-  </script>
+</script>
 
 
 </table>
