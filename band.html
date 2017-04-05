@@ -1,67 +1,158 @@
-<html>
-<head>
-<link rel = "STYLESHEET" href="./css/band_table.css" type="text/css"/> 
-<link rel = "STYLESHEET" href="./css/navigation.css" type="text/css"/> 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
 
+    <!-- Navbar Bootstrap javascript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+    <!-- Normal Bootstrap Links-->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/css/dataTables.bootstrap4.min.css" rel="stylesheet"/>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+      
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    
+        
+    <title>Bands - TheBestBands.me</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="./css/bandBootstrap.css" rel="stylesheet">
     
   </head>
 
+  
+
+  <!-- Pinned nav bar -->
   <body>
 
-    <div class="topnav" id="myTopnav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="label.html">Labels</a>
-      <a href="band.html">Bands</a>
-      <!-- <a href="band-beatles.html">The Beatles</a>
-      <a href="band-jackson5.html">The Jackson Five</a>
-      <a href="band-theroots.html">The Roots</a> -->
-      <a href="genre.html">Genres</a>
-    </div>
+  <nav class="navbar navbar-inverse navbar-toggleable-md navbar-inner" >
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <a class="navbar-brand"  href="index.html">TheBestBands.me</a>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link"  href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
 
-  <div class = "billboard">
-    <div class = "text-wrapper"> 
-      <h1> The Best Bands </h1>
-    </div>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Labels
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="label.html">Labels Home</a>
+         <a class="dropdown-item" href="label-defjam.html">Def Jam</a>
+          <a class="dropdown-item" href="label-emi.html">Emi</a>
+          <a class="dropdown-item" href="label-motown.html">Motown</a>
+        </div>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Bands
+        </a>
+         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="band.html">Bands Home</a>
+         <a class="dropdown-item" href="band-beatles.html">Beatles</a>
+          <a class="dropdown-item"  href="band-jackson5.html">Jackson 5</a>
+          <a class="dropdown-item" href="band-theroots.html">The Roots</a>
+        </div>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Genres
+        </a>
+         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="genre.html">Genres Home</a>
+         <a class="dropdown-item" href="Rock.html">Rock Music</a>
+          <a class="dropdown-item"  href="Pop.html">Pop Music</a>
+          <a class="dropdown-item"  href="HipHop.html">Hip Hop Music</a>
+        </div>
+      </li>
+    </ul>
   </div>
-   
-    <!--<input type="search" id="search" placeholder="Filter by Title"> -->
-    <table>
-      <tr>
-        <th style="width:25%">Band Name</th>
-        <th style="width:35%">Members</th>
-        <th style="width:15%">Years Active</th>
-        <th style="width:25%">Best Selling Album</th>
-        <th style="width:20%">Genre</th>
-      </tr>
+</nav>
+
+
+
+<!-- Page Banner-->
+<div class = "bg">
+<div class = "jumbotron">
+  <h1 class = "display-title">The Best Bands</h1>
+  </div>
+</div>
+
+
+  <!-- Table header/footer--> 
+  <div class="tableInfo" >
+    <div class="table-responsive"  >
+      <div class ="container"> 
+      <table id="example" class=" table table-striped table-inverse table-bordered table-hover " cellspacing="0" width="100%">
+      <thead>
+        <tr>
+        <th>Band Name</th>
+        <th>Members</th>
+        <th>Years Active</th>
+        <th>Best Selling Album</th>
+        <th>Genre</th>
+        </tr></thead>
+      <tfoot>
+        <tr>
+        <th>Band Name</th>
+        <th>Members</th>
+        <th>Years Active</th>
+        <th>Best Selling Album</th>
+        <th>Genre</th>
+        </tr></tfoot>
+  
+    <!-- Table contents-->
+    <tr>
+      <td id="title"><a href="band-beatles.html">The Beatles</a></td>
+      <td>John Lennon, Paul McCartney, George Harrison, Ringo Starr</td>
+      <td>1960-1970</td>
+      <td>Sgt Peppers Lonely Hearts Club Band </td>
+      <td>Rock, Pop, Hard Rock</td> 
+    </tr>
       
-      <tr>
-        <td id="title"><a href="band-beatles.html">The Beatles</a></td>
-        <td>John Lennon, Paul McCartney, George Harrison, Ringo Starr</td>
-        <td>1960-1970</td>
-        <td>Sgt Peppers Lonely Hearts Club Band </td>
-        <td>Rock, Pop, Hard Rock</td> 
-      </tr>
+    <tr>
+      <td id="title"><a href="band-jackson5.html">The Jackson Five</a></td>
+      <td>Jackie Jackson, Tito Jackson, Jermaine Jackson, Marlon Jackson, Michael Jackson, Randy Jackson</td>
+      <td>1964-1989, 2012-2013</td>
+      <td>Victory</td>
+      <td>Funk, Disco, Pop, Rhythm and Blues, Bubblegum Pop, Soul</td> 
+    </tr>
       
-      <tr>
-        <td id="title"><a href="band-jackson5.html">The Jackson Five</a></td>
-        <td>Jackie Jackson, Tito Jackson, Jermaine Jackson, Marlon Jackson, Michael Jackson, Randy Jackson</td>
-        <td>1964-1989, 2012-2013</td>
-        <td>Victory</td>
-        <td>Funk, Disco, Pop, Rhythm and Blues, Bubblegum Pop, Soul</td> 
-      </tr>
-      
-      <tr>
-        <td id="title"><a href="band-theroots.html">The Roots</a></td>
-        <td>Black Thought (Tariq Trotter), Questlove (Ahmir Thompson), Hub (Leonard Hubbard), Mark Kelly, Tuba Gooding Jr. (Damon Bryson), Captain Kirk Douglas, Kamal Gray, F. Knuckles, and James Poyser</td>
-        <td>1987- Present</td>
-        <td>Things Fall Apart</td>
-        <td>Hip Hop, Jazz Rap, Neo Soul, Alternative Hip Hop</td> 
-      </tr>
+    <tr>
+      <td id="title"><a href="band-theroots.html">The Roots</a></td>
+      <td>Black Thought (Tariq Trotter), Questlove (Ahmir Thompson), Hub (Leonard Hubbard), Mark Kelly, Tuba Gooding Jr. (Damon Bryson), Captain Kirk Douglas, Kamal Gray, F. Knuckles, and James Poyser</td>
+      <td>1987- Present</td>
+      <td>Things Fall Apart</td>
+      <td>Hip Hop, Jazz Rap, Neo Soul, Alternative Hip Hop</td> 
+    </tr>
+
       
 
 
 		<script>
+    
+
     // Quick Table Search
 $('#search').keyup(function() {
   var regex = new RegExp($('#search').val(), "i");
@@ -83,3 +174,56 @@ $('#search').keyup(function() {
   </body>
 </html>
 
+
+
+
+
+
+
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    
+
+
+
+<!-- Bootstrap table javascript
+    ================================================== -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.13/js/dataTables.bootstrap4.min.js"></script>
+        
+        <script>
+        
+$(document).ready(function() {
+    $('#example').dataTable( {
+      "lengthMenu": [ 3, 5, 10 ]
+      
+    } );
+});
+
+var jumboHeight = $('.jumbotron').outerHeight();
+function parallax(){
+    var scrolled = $(window).scrollTop();
+    $('.bg').css('height', (jumboHeight-scrolled) + 'px');
+    $('.jumbotron').css('margin-top', (jumboHeight-scrolled)-350 + 'px');
+
+}
+
+$(window).scroll(function(e){
+    parallax();
+});
+  </script>
+
+
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
