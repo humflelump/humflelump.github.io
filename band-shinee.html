@@ -17,16 +17,33 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
-    
-        
-    <title>Bands - TheBestBands.me</title>
+
+    <!--xxxUnique Band Page head-->
+    <style>
+        .box {
+            width: 55%;
+            padding: 10px;
+            font-size: 25;
+            background-color: #F1F1FF;
+        }
+        .video {
+            width: 40%;
+            padding: 5px;
+            cursor: pointer;
+        }
+    </style>
+
+
+    <title>SHINee - TheBestBands.me</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
 
-
     <!-- Custom styles for this template -->
     <link href="./css/bandBootstrap.css" rel="stylesheet">
+    
+<!--
+    <link rel = "STYLESHEET" href = "./css/band_table.css" type = "text/css"/>-->
     
   </head>
 
@@ -73,7 +90,7 @@
           <a class="dropdown-item" href="band-beatles.html">Beatles</a>
           <a class="dropdown-item" href="band-jackson5.html">Jackson 5</a>
           <a class="dropdown-item" href="band-theroots.html">The Roots</a>
-          <a class="dropdown-item" href="band-shinee.html">Shinee</a>
+          <a class="dropdown-item" href="band-shinee.html">SHINee</a>
         </div>
       </li>
       
@@ -94,29 +111,45 @@
     </nav>
 
 
-
-<!-- Page Banner-->
-<div class = "bg">
-<div class = "jumbotron">
-  <h1 class = "display-title">The Best Bands</h1>
-  </div>
-</div>
-
-<div id="home-page-boxes" style="display: flex; flex-direction: row; justify-content: space-around">
-
-			<div class="box" onclick="location.href='about.html';">
-                <p>Alabama Shakes is relatively known blues rock band that was founded in 2009. The Alabama-based have only released 2 albums since their formation. They have been nominated for a total 8 times for Grammy Awards, including Album of the Year, and eventually picking up 3 awards in less than 10 years. The band gain recognition with the release of their first album that highlighted the power and soul in the voice of lead singer, Brittney Howard. Similar to the Beatles, the band played in many different venues before being discovered. The band’s style and art has been met with near-universal acclaim. Their musical style draws influence from 20th century rhythm and blues. Their unique songwriting draws comparisons to musical legends such as Aretha Franklin and Janis Joplin. Howard’s style of singing is rare in today’s music industry and is influenced by the works of David Bowie and AC/DC. </p>
-                <a class="twitter-timeline" href="https://twitter.com/Alabama_Shakes">Tweets by Alabama Shakes</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
-            <div class="video" onclick="location.href='https://en.wikipedia.org/wiki/Sound_%26_Color';"> 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/2uneYz201p0" frameborder="0" allowfullscreen></iframe>     
-
-            <ul>
-                <li><b>Band's Website: </b><a href="http://alabamashakes.com/"> http://www.thebeatles.com</a></li>
-                <li><b>Best Selling Album: Sounds & Color (2015)</b><img src="sound&color.png"></li>
-                </ul>
+    <!-- xxxBand's banner display -->
+    <div class="bg" style="background: url('./images/shineebanner.jpg') no-repeat center center;">
+      
+      <div class="jumbotron" >
+        <h1 class="display-title", style="color:#FFFFFF">SHINee</h1> 
+      </div>
     
-           </div>
+    </div>
+
+    
+    <div id="home-page-boxes" style="display: flex; flex-direction: row; justify-content: space-around">
+
+  		<div class="box" onclick="location.href='about.html';">
+        <p>SHINee is a well-known Korean pop boy band. </p>
+        
+
+<!--SHINEE DOESN'T HAVE ONE-->
+          <a class="twitter-timeline" href="https://twitter.com/smtownglobal">Tweets by SM Town, SHINee's label</a>
+          <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+            
+    
+    <div class="video" onclick="location.href='https://en.wikipedia.org/wiki/Lucifer_(Shinee_album)';"> 
+      
+
+
+<!--need youtube video???-->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/2uneYz201p0" frameborder="0" allowfullscreen></iframe>     
+
+      <ul>
+        <li><b>Band's Website: </b><a href="http://shinee.smtown.com/"> http://shinee.smtown.com/</a>
+        </li>
+        
+        <li>
+          <b>Best Selling Album: Lucifer (2010)</b><img src="images/shinee_lucifer.jpg">
+        </li>
+      </ul>
+    
+    </div>
 
         </div>
 
@@ -140,4 +173,57 @@
 
 
 </body>
+</html>
+
+
+
+
+
+
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    
+
+
+
+<!-- Bootstrap table javascript
+    ================================================== -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.13/js/dataTables.bootstrap4.min.js"></script>
+        
+        <script>
+        
+$(document).ready(function() {
+    $('#example').dataTable( {
+      "lengthMenu": [ 3, 5, 10 ]
+      
+    } );
+});
+
+var jumboHeight = $('.jumbotron').outerHeight();
+function parallax(){
+    var scrolled = $(window).scrollTop();
+    $('.bg').css('height', (jumboHeight-scrolled) + 'px');
+    $('.jumbotron').css('margin-top', (jumboHeight-scrolled)-350 + 'px');
+
+}
+
+$(window).scroll(function(e){
+    parallax();
+});
+  </script>
+
+
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
 </html>
