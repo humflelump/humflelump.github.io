@@ -1,24 +1,25 @@
-<html>
-<head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
 
-  <!-- Navbar Bootstrap javascript-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-       
-        <!-- Normal Bootstrap Links-->
+    <!-- Navbar Bootstrap javascript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 
-       <link href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/css/dataTables.bootstrap4.min.css" rel="stylesheet"/>
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!-- Normal Bootstrap Links-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/css/dataTables.bootstrap4.min.css" rel="stylesheet"/>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+      
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
-    
-<!-- styling for textbox-->
-  
-  <style>
+
+    <!--xxxUnique Band Page head-->
+    <style>
         .box {
             width: 55%;
             padding: 10px;
@@ -29,37 +30,43 @@
             width: 40%;
             padding: 5px;
             cursor: pointer;
-        }    
+        }
+    </style>
 
-  </style>
 
-    <title>The Best Bands</title>
+    <title>The Roots - TheBestBands.me</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
 
-
     <!-- Custom styles for this template -->
-    <link href="./css/genresBootstrap.css" rel="stylesheet">
-    <link rel = "STYLESHEET" href="./css/genresTable.css" type="text/css"/> 
+    <link href="./css/bandBootstrap.css" rel="stylesheet">
+    
+<!--
+    <link rel = "STYLESHEET" href = "./css/band_table.css" type = "text/css"/>-->
+    
+  </head>
 
-</head>
-        <body>
-        <nav class="navbar navbar-inverse navbar-toggleable-md navbar-inner" >
+  
+
+  <!-- Pinned nav bar -->
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-toggleable-md navbar-inner" >
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <span class="navbar-toggler-icon"></span>
     </button>
   
     <a class="navbar-brand"  href="index.html">TheBestBands.me</a>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link"  href="index.html">Home <span class="sr-only">(current)</span></a>
-        </li>
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link"  href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
       
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
 
       <!--Labels sub dropdown menu-->
       <li class="nav-item dropdown">
@@ -83,12 +90,14 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="band.html">Bands Home</a>
           <a class="dropdown-item" href="band-alabamashakes.html">Alabama Shakes</a>
-          <a class="dropdown-item" href="band-beatles.html"> The Beatles</a>
+          <a class="dropdown-item" href="band-beatles.html">The Beatles</a>
           <a class="dropdown-item" href="band-dixiechicks.html">Dixie Chicks</a>
           <a class="dropdown-item" href="band-jackson5.html">Jackson 5</a>
           <a class="dropdown-item" href="band-lakestreetdive.html">Lake Street Dive</a>
           <a class="dropdown-item" href="band-theroots.html">The Roots</a>
           <a class="dropdown-item" href="band-shinee.html">SHINee</a>
+        </div>
+      </li>
       
       <!--Labels sub dropdown menu-->
       <li class="nav-item dropdown">
@@ -96,29 +105,32 @@
 
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="genre.html">Genres Home</a>
-          <a class="dropdown-item" href="Blues.html">Blues Music</a>
-           <a class="dropdown-item" href="Country.html">Country Music</a>
-          <a class="dropdown-item" href="HipHop.html">Hip Hop Music</a>
-          <a class="dropdown-item" href="KPop.html">KPop</a>
-          <a class="dropdown-item" href="Pop.html">Pop Music</a>
           <a class="dropdown-item" href="Rock.html">Rock Music</a>
+          <a class="dropdown-item"  href="Pop.html">Pop Music</a>
+          <a class="dropdown-item"  href="HipHop.html">Hip Hop Music</a>
+          <a class="dropdown-item"  href="Blues.html">Blues Music</a>
+          <a class="dropdown-item" href="kPop.html">K-Pop Music</a>
+          <a class="dropdown-item" href="Jazz.html">Jazz Music</a>
+          <a class="dropdown-item" href="Country.html">Country Music</a>
         </div>
       </li>
-    </ul>
-  </div>
-</nav>
-
- <!-- Main jumbotron with background image-->
-    <div class="bg" style="background: url('./images/roots.jpeg') no-repeat center center;">
     
-    <div class="jumbotron" >
+    </ul>
+    </div>
+    </nav>
 
-        <h1 class="display-title", style="color:white">The Roots</h1>
-       
+
+    <!-- xxxBand's banner display -->
+    <div class="bg" style="background: url('./images/theroots.jpg') no-repeat center center;">
+      
+      <div class="jumbotron" >
+        <h1 class="display-title", style="color:#FFFFFF">The Roots</h1> 
       </div>
+    
     </div>
 
-<div id="home-page-boxes" style="display: flex; flex-direction: row; justify-content: space-around">
+    
+    <div id="home-page-boxes" style="display: flex; flex-direction: row; justify-content: space-around; margin-top: 350px;">
 
 			<div class="box" onclick="location.href='about.html';">
                 <p>The Roots is an American Hip Hop group known for their live musical performances and their jazzy approach to hip hop. The band originated in Philadelphia, Pennsylvania by Black Thought (Tariq Trotter) and Questlove (Ahmir Thompson) while both were attending Philadelphia High School for the Creative and Performing Arts. Since their formation, the band has released 10 studio albums, 2 EPs, and 2 collaboration albums( with artist John Legend and Betty Wright). The band has undergone several member changes as the total members of the band equates to 16 current and previous members. The band is currently serves as the house band for the Tonight Show Starring Jimmy Fallon. </p>
