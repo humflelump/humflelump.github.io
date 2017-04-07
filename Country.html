@@ -1,6 +1,6 @@
 <html>
 <head>
- <!-- Navbar Bootstrap javascript-->
+	 <!-- Navbar Bootstrap javascript-->
 	     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 	     
 	      <!-- Normal Bootstrap Links-->
@@ -15,9 +15,6 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
     
-    
-  <!-- styling for textbox-->
-
 <style>
         .box {
             width: 55%;
@@ -44,10 +41,7 @@
     <link rel = "STYLESHEET" href="./css/genresTable.css" type="text/css"/> 
     
 </head>
-
     <body>
-		    <!-- NAVBAR stuff-->
-
     <nav class="navbar navbar-inverse navbar-toggleable-md navbar-inner" >
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -86,7 +80,6 @@
           <a class="dropdown-item" href="band-shinee.html">SHINee</a>
           <a class="dropdown-item" href="band-lakestreetdive.html">Lake Street Dive</a>
           <a class="dropdown-item" href="band-dixiechicks.html">Dixie Chicks</a>
-
         </div>
       </li>
        <li class="nav-item dropdown">
@@ -102,39 +95,33 @@
          <a class="dropdown-item" href="kPop.html">K-Pop Music</a>
            <a class="dropdown-item" href="Jazz.html">Jazz Music</a>
              <a class="dropdown-item" href="Country.html">Country Music</a>
-
         </div>
       </li>
     </ul>
   </div>
 </nav>
 
-    <!-- Main jumbotron with background image-->
-    <div class="bg" style="background: url('./images/kpopconcert.jpg') no-repeat center center;">
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="bg"  style="background: url('./images/country.jpg') no-repeat center center;">
 		
-    <div class="jumbotron" >
+    <div class="jumbotron">
 
-        <h1 class="display-title", style="color:#FFFFFF">K-Pop Music</h1>
+        <h1 class="display-title", style="color:#FFFFFF">Country Music</h1>
        
       </div>
     </div>
-    
-        <!-- Main area for band/genre/label information -->
 
-<div id="home-page-boxes" style="display: flex; flex-direction: row; justify-content: space-around;  margin-top:350px;">
+<div id="home-page-boxes" style="display: flex; flex-direction: row; justify-content: space-around; margin-top:350px;">
             
             <div class="box" onclick="location.href='about.html';">
-                <p>K-pop  is a music genre originating in South Korea that is characterized by a wide variety of audiovisual elements. Although it comprises all genres of "popular music" within South Korea, the term is more often used in a narrower sense to describe a modern form of South Korean pop music covering a range of styles and genres incorporated from the West such as Western pop music, rock, jazz, hip-hop, R&B, reggae, electronica, techno, rave, nu metal, folk, country and classical on top of its traditional Korean music roots. The <a href="./band-shinee.html"> Shinee</a> page has more information on a popular K-Pop group and check out their label <a href="./label-smEntertainment.html">S.M. Entertainment</a> to find more bands like them. </p> 
-               <a class="twitter-timeline" href="https://twitter.com/allkpop">Tweets by K Pop</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <p>Country music (frequently referred to as just country) is a genre of United States popular music that originated in the southern United States in the 1920s. It takes its roots from the southeastern genre of United States, such as folk music (especially Appalachian folk music), and blues music. Blues modes have been used extensively throughout its recorded history. Country music often consists of ballads and dance tunes with generally simple forms and harmonies accompanied by mostly string instruments such as banjos, electric and acoustic guitars, dobros and fiddles as well as harmonicas.The <a href="./band-dixiechicks.html"> Dixie Chicks</a> page has more information on a popular hip hop group and check out their label <a href="./label-columbia.html">Columbia Records</a> to find more bands like them.</p>
+               <a class="twitter-timeline" href="https://twitter.com/CountryMusic">Tweets by OnlyHipHopFacts</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
             <div class="video" onclick="location.href='about.html';"> 
-        <iframe width="649" height="365"  src="https://www.youtube.com/embed/8A2t_tAjMz8" frameborder="0" allowfullscreen></iframe>       
+        <iframe width="649" height="365" src="https://www.youtube.com/embed/nXStKdubasA"  frameborder="0" allowfullscreen></iframe>          
           </div>
         
         </div>
-
-
-<!--twitter feed-->
 
         <script>window.twttr = (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0],
@@ -154,7 +141,9 @@
 }(document, "script", "twitter-wjs"));</script>
 
 <!--<input type="search" id="search" placeholder="Filter by Title"> -->
-  <!-- Bootstrap core JavaScript
+
+
+    <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
 
@@ -180,8 +169,6 @@ $(document).ready(function() {
       
     } );
 });
-
-<!-- scrolling function -->
 
 var jumboHeight = $('.jumbotron').outerHeight();
 function parallax(){
