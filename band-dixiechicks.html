@@ -106,16 +106,15 @@
     </div>
     </nav>
 
-<style> .jumbotron {  background-image: url("./images/dixiechicks.jpg");
-}
-h1{color: white;}
-  </style>
+<!-- Main jumbotron with background image-->
+    <div class="bg" style="background: url('./images/dixiechicks.jpg') no-repeat center center;">
+    
+    <div class="jumbotron" >
 
-<div class = "billboard">
-  	<div class = "text-wrapper"> 
-    	<h1>Dixie Chicks</h1>
-  	</div>
-</div>
+        <h1 class="display-title", style="color:brown">Dixie Chicks</h1>
+       
+      </div>
+    </div>
 
 <div id="home-page-boxes" style="display: flex; flex-direction: row; justify-content: space-around">
 
@@ -123,7 +122,7 @@ h1{color: white;}
                 <p>The Dixie Chicks is one of the most controversial acts in country music. The Dallas based band started in 1989 and consisted of4 women specializing in bluegrass music and country music. Six years, a new repertoire, and a new lead singer led to commercial success. The band played the festival circuits and small venues before attracting the attention of major record labels. The band's 5th album, Fly, was certified Diamond, making them the only country and the only female band of any genre to have 2 back-to-back Diamond albums. In 2000, the Dixie Chicks were ostracized by the country world for comments made about George W. Bush during a concert stop in Great Britain. The band addressed the backlash and controversy with their album Taking the Long Way , which won the 2007 Grammy Award for Album of the Year. Since their formation, The band has a earned a total of 13 Grammy Awards and many other accolades.</p>
                 <a class="twitter-timeline" href="https://twitter.com/dixiechicks">Tweets by Dixie Chicks</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
-            <div class="image" onclick="location.href='https://en.wikipedia.org/wiki/Side_Pony';"> 
+            <div class="image" onclick="location.href='https://en.wikipedia.org/wiki/Fly_(Dixie_Chicks_album)';"> 
        <iframe width="560" height="315" src="https://www.youtube.com/embed/gxB02IK1ujc" frameborder="0" allowfullscreen></iframe>     
 
             <ul>
@@ -151,8 +150,8 @@ h1{color: white;}
 
   return t;
 }(document, "script", "twitter-wjs"));</script>
-
- <!-- Bootstrap core JavaScript
+!--<input type="search" id="search" placeholder="Filter by Title"> -->
+  <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
 
@@ -160,6 +159,42 @@ h1{color: white;}
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="../../dist/js/bootstrap.min.js"></script>
+    
 
+
+
+<!-- Bootstrap table javascript
+    ================================================== -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.13/js/dataTables.bootstrap4.min.js"></script>
+        
+        <script>
+        
+$(document).ready(function() {
+    $('#example').dataTable( {
+      "lengthMenu": [ 3, 5, 10 ]
+      
+    } );
+});
+
+<!-- scrolling function -->
+
+var jumboHeight = $('.jumbotron').outerHeight();
+function parallax(){
+    var scrolled = $(window).scrollTop();
+    $('.bg').css('height', (jumboHeight-scrolled) + 'px');
+    $('.jumbotron').css('margin-top', (jumboHeight-scrolled)-350 + 'px');
+
+}
+
+$(window).scroll(function(e){
+    parallax();
+});
+        </script>
+
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
