@@ -21,6 +21,43 @@ def index():
 	
 #ADD YOUR LABELS, BANDS LINKS/FUNCTIONS HERE
 # you also have to change your references to css and images by adding ../static/	
+
+#functions for bands pages
+@app.route('/Alabama_Shakes')
+def Alabama_Shakes():
+	return render_template('band-alabamashakes.html')
+
+@app.route('/Beatles')
+def Beatles():
+	return render_template('band-beatles.html')
+
+@app.route('/Dixie_Chicks')
+def Dixie_Chicks():
+	return render_template('band-dixiechicks.html')
+
+@app.route('/Jackson_Five')
+def Jackson_Five():
+	return render_template('band-jackson5.html')
+
+@app.route('/lsd')
+def lsd():
+	return render_template('band-lakestreetdive.html')
+
+@app.route('/Shinee')
+def Shinee():
+	return render_template('band-shinee.html')
+
+@app.route('/Roots')
+def Roots():
+	return render_template('band-theroots.html')
+
+@app.route('/band_home')
+def band_home():
+	return render_template('band.html')
+
+
+
+
 @app.route('/label_defjam')
 def label_defjam():
 	return render_template('label-defjam.html')
